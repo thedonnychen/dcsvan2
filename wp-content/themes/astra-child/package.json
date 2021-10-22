@@ -1,0 +1,27 @@
+{
+        "name": "dcdev",
+        "version": "1.0.0",
+        "description": "Packages used for the development of the DC Developer WordPress theme",
+        "main": "index.js",
+        "scripts": {
+                "build": "webpack --progress -p --colors --mode production",
+                "dev": "webpack --progress --colors --watch --mode development"
+        },
+        "author": "Donny Chen",
+        "license": "ISC",
+        "devDependencies": {
+                "autoprefixer": "^9.7.5",
+                "css-loader": "^1.0.0",
+                "mini-css-extract-plugin": "^0.4.3",
+                "node-sass": "^4.9.3",
+                "optimize-css-assets-webpack-plugin": "^5.0.1",
+                "postcss-loader": "^3.0.0",
+                "precss": "^4.0.0",
+                "sass-loader": "^7.1.0",
+                "typescript": "^3.4.1",
+                "uglifyjs-webpack-plugin": "^2.0.1",
+                "webpack": "^4.20.2",
+                "webpack-cli": "^3.3.11"
+        },
+        "dependencies": {}
+}

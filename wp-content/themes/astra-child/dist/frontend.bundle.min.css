@@ -1,0 +1,19 @@
+/* Cover Image Adjustments */
+.dcs-cover {
+  min-height: 100vh; }
+  @media (max-width: 1200px) {
+    .dcs-cover {
+      padding: 3em !important; } }
+  @media (max-width: 544px) {
+    .dcs-cover {
+      padding: 2em !important; } }
+
+.dcs-cover-caption {
+  font-size: 24px; }
+  @media (max-width: 992px) {
+    .dcs-cover-caption {
+      font-size: 21px; } }
+  @media (max-width: 544px) {
+    .dcs-cover-caption {
+      font-size: 18px; } }
+

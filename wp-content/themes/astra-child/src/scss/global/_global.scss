@@ -1,0 +1,24 @@
+/* Cover Image Adjustments */
+.dcs-cover {
+    min-height: 100vh;
+
+    @include bp(xl-max) {
+        padding: 3em !important; // overwrite declared inline by wp
+    }
+
+    @include bp(sm-max) {
+        padding: 2em !important; // overwrite declared inline by wp
+    }
+}
+
+.dcs-cover-caption {
+    font-size: 24px;
+
+    @include bp(lg-max) {
+        font-size: 21px;
+    }
+
+    @include bp(sm-max) {
+        font-size: 18px;
+    }
+}

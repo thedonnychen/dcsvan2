@@ -1,0 +1,67 @@
+@mixin bp($media...) {
+	@each $mediatype in $media {
+		@include astra-break-point($mediatype) { @content; }
+	}
+}
+
+// Astra Breakpoints
+@mixin astra-break-point($point) {
+	@if $point == xs-min {
+		@media (min-width: 421px) { @content; }	
+	}
+	@else if $point == sm-min {
+		@media (min-width: 545px) { @content; }
+	}
+	@else if $point == md-min { 
+		@media (min-width: 769px) { @content; }
+	}
+	@else if $point == lg-min { 
+		@media (min-width: 993px) { @content; }
+	}
+	@else if $point == xl-min {
+		@media (min-width: 1201px) { @content; }
+	}
+	@else if $point == xs-max {
+		@media (max-width: 420px) { @content; }
+	}
+	@else if $point == sm-max {
+		@media (max-width: 544px) { @content; }
+	}
+	@else if $point == md-max {
+		@media (max-width: 768px) { @content; }
+	}
+	@else if $point == lg-max {
+		@media (max-width: 992px) { @content; }
+	}
+	@else if $point == xl-max {
+		@media (max-width: 1200px) { @content; }
+	}
+}
+
+// Visual Composer Breakpoints
+@mixin vc-break-point($point) {
+	@if $point == sm-min {
+		@media (min-width: 575px) { @content; }
+	}
+	@else if $point == md-min { // Visual Composer sm
+		@media (min-width: 768px) { @content; }
+	}
+	@else if $point == lg-min { // Visual Composer md
+		@media (min-width: 992px) { @content; }
+	}
+	@else if $point == xl-min { // Visual Composer lg
+		@media (min-width: 1200px) { @content; }
+	}
+	@else if $point == sm-max {
+		@media (max-width: 574px) { @content; }
+	}
+	@else if $point == md-max {
+		@media (max-width: 767px) { @content; }
+	}
+	@else if $point == lg-max {
+		@media (max-width: 991px) { @content; }
+	}
+	@else if $point == xl-max {
+		@media (max-width: 1199px) { @content; }
+	}
+}
