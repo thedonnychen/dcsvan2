@@ -1,6 +1,7 @@
 /* Cover Image Adjustments */
 .dcs-cover {
-  min-height: 100vh; }
+  height: 66vh;
+  min-height: 600px; }
   @media (max-width: 1200px) {
     .dcs-cover {
       padding: 3em !important; } }
@@ -9,11 +10,27 @@
       padding: 2em !important; } }
 
 .dcs-cover-caption {
-  font-size: 24px; }
+  font-size: 24px;
+  margin-bottom: 0; }
   @media (max-width: 992px) {
     .dcs-cover-caption {
       font-size: 21px; } }
   @media (max-width: 544px) {
     .dcs-cover-caption {
       font-size: 18px; } }
+  @media (max-width: 420px) {
+    .dcs-cover-caption {
+      font-size: 16px; } }
+
+.entry-content .dcs-cover-caption + .wp-block-buttons {
+  margin-top: 1.6em; }
+
+@media (max-width: 1200px) {
+  header .custom-logo-link img {
+    max-width: 250px; }
+  #masthead .ast-container {
+    padding: 0 !important; } }
+
+body.home .dcs-cover {
+  min-height: 100vh; }
 

@@ -1,0 +1,11 @@
+@include bp(xl-max) {
+    header .custom-logo-link img {
+        max-width: 250px;
+    }
+
+    #masthead .ast-container {
+        padding: 0 !important; // overwrite theme to make styling match
+    }
+}
+
+
