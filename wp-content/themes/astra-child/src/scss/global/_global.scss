@@ -33,3 +33,23 @@
     margin-top: 1.6em; // account for spacing if there is a button below
 }
 
+.entry-content .dcs-header-underline {
+    border-bottom: 5px solid var(--ast-global-color-1);
+    display: inline-block;
+    padding-bottom: 2rem;
+    margin-bottom: 2rem;
+}
+
+.wp-block-social-links.is-style-logos-only li.wp-social-link.wp-social-link.wp-social-link.wp-social-link {
+    color: var(--ast-global-color-8) !important; // overwrite wp block style
+    margin-right: 20px;
+    padding: 0;
+
+    &:hover {
+        color: var(--ast-global-color-1) !important; // overwrite wp block style
+    }
+
+    a {
+        padding: 0;
+    }
+}
