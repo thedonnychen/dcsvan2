@@ -1,5 +1,5 @@
 <?php 
-namespace Plugins\DcDeveloper\Classes;
+namespace Plugins\DcBackend\Classes;
 
 class Initialize
 {
