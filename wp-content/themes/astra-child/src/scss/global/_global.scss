@@ -1,18 +1,26 @@
 /* Cover Image Adjustments */
 .dcs-cover {
-    height: 66vh;
-    min-height: 600px;
+    // height: 66vh;
+    // min-height: 600px;
+
+    @include bp(lg-min) {
+        padding: 120px 3em 3em 3em; // offset menu height
+    }
 
     @include bp(xl-max) {
-        padding: 3em !important; // overwrite declared inline by wp to match styling
+        padding: 120px 3em 3em 3em !important; // overwrite declared inline by wp to match styling
+    }
+
+    @include bp(lg-max) {
+
     }
 
     @include bp(sm-max) {
-        padding: 2em !important; // overwrite declared inline by wp to match styling
+        padding: 80px 2em 2em 2em !important; // overwrite declared inline by wp to match styling
     }
 }
 
-.dcs-cover-caption {
+.entry-content .dcs-cover-caption {
     font-size: 24px;
     margin-bottom: 0;
 
@@ -41,7 +49,6 @@
 }
 
 .wp-block-social-links.is-style-logos-only li.wp-social-link.wp-social-link.wp-social-link.wp-social-link {
-    color: var(--ast-global-color-8) !important; // overwrite wp block style
     margin-right: 20px;
     padding: 0;
 

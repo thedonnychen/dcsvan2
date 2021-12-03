@@ -77,7 +77,7 @@ $table_prefix = 'wp_';
  *
  * @link https://wordpress.org/support/article/debugging-in-wordpress/
  */
-define( 'WP_DEBUG', true );
+define( 'WP_DEBUG', false );
 
 /* That's all, stop editing! Happy publishing. */
 
@@ -88,3 +88,6 @@ if ( ! defined( 'ABSPATH' ) ) {
 
 /** Sets up WordPress vars and included files. */
 require_once ABSPATH . 'wp-settings.php';
+
+define('WP_MEMORY_LIMIT', '256M');
+define( 'WP_MAX_MEMORY_LIMIT', '256M' );

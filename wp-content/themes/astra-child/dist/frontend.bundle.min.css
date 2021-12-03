@@ -10,27 +10,29 @@
   --ast-global-color-8: #24247a; }
 
 /* Cover Image Adjustments */
-.dcs-cover {
-  height: 66vh;
-  min-height: 600px; }
-  @media (max-width: 1200px) {
-    .dcs-cover {
-      padding: 3em !important; } }
-  @media (max-width: 544px) {
-    .dcs-cover {
-      padding: 2em !important; } }
+@media (min-width: 993px) {
+  .dcs-cover {
+    padding: 120px 3em 3em 3em; } }
 
-.dcs-cover-caption {
+@media (max-width: 1200px) {
+  .dcs-cover {
+    padding: 120px 3em 3em 3em !important; } }
+
+@media (max-width: 544px) {
+  .dcs-cover {
+    padding: 80px 2em 2em 2em !important; } }
+
+.entry-content .dcs-cover-caption {
   font-size: 24px;
   margin-bottom: 0; }
   @media (max-width: 992px) {
-    .dcs-cover-caption {
+    .entry-content .dcs-cover-caption {
       font-size: 21px; } }
   @media (max-width: 544px) {
-    .dcs-cover-caption {
+    .entry-content .dcs-cover-caption {
       font-size: 18px; } }
   @media (max-width: 420px) {
-    .dcs-cover-caption {
+    .entry-content .dcs-cover-caption {
       font-size: 16px; } }
 
 .entry-content .dcs-cover-caption + .wp-block-buttons {
@@ -44,8 +46,6 @@
   margin-bottom: 2rem; }
 
 .wp-block-social-links.is-style-logos-only li.wp-social-link.wp-social-link.wp-social-link.wp-social-link {
-  color: #24247a !important;
-  color: var(--ast-global-color-8) !important;
   margin-right: 20px;
   padding: 0; }
   .wp-block-social-links.is-style-logos-only li.wp-social-link.wp-social-link.wp-social-link.wp-social-link:hover {
@@ -59,6 +59,10 @@
     max-width: 250px; }
   #masthead .ast-container {
     padding: 0 !important; } }
+
+footer .site-below-footer-wrap a:hover {
+  color: #2c2927;
+  color: var(--ast-global-color-2); }
 
 body.home .dcs-cover {
   min-height: 100vh; }
